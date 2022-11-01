@@ -1,25 +1,22 @@
-// const box = document.getElementById("box");
-// const bars2 = document.getElementById("sou")
-// const bars = document.getElementById("lee");
+let ulshow = document.querySelector('#lee');
+let btnshow = document.querySelector('#showmanuba');
 
-// function jay(){
-//     box.classList.toggle("x-box-22");
-// }
-// // function lee
+btnshow.addEventListener('click', function(){
+    ulshow.classList.toggle('see')
+})
 
-// function lee(){
-//     bars.classList.toggle("see")
-// }
+let btnInputshow = document.querySelector('.bjo');
+let boxshow = document.querySelector('#box-ba');
 
-// function vor(){
-//     bars2.classList.toggle("img")
-// }
-// function btn(){
-//     alert("ທ່ານໄດ້ສັ່ງຊື້ແລ້ວ ຂອບໃຈທີ່ໃຊ້ບໍລິການ")
-// }
-const showBa = document.querySelector('#showmanuba');
-const boxBa = document.querySelector('#box-ba');
+btnInputshow.addEventListener('click', function(){
+    boxshow.classList.toggle('showbox');
+})
 
-    showBa.addEventListener('click', function(){
-        boxBa.classList.toggle('see');
-    })
+let btnshowbox2 = document.querySelector('#showBox-2');
+let showbox2 = document.querySelector('#sou')
+
+btnshowbox2.addEventListener('click', function(){
+    
+    showbox2.style = "display: block";
+
+})

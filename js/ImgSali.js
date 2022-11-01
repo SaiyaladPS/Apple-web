@@ -36,5 +36,3 @@ let numberIn = 0
     btn2.addEventListener('click', sliImgBtn2);
     document.addEventListener('keyup', checkkey);
     setInterval(removecalss, 1000);
-    
-    
