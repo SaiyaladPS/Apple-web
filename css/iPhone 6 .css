@@ -731,7 +731,8 @@ main .contnet {
 main .contnet .box-1 .title {
     padding: 0;
     margin: 0;
-    width: 250px;
+    width: 270px;
+    font-size: 1.3em;
 }
 main .contnet .box-1 .img img {
     width: 200px;

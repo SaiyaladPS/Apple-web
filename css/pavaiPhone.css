@@ -517,20 +517,36 @@ footer .aout-2 .font{
     }
     nav .manu .uo{
         display: none;
+        
     }
-    nav .manu .see{
+    nav .manu .uo .bjo .box{
+        display: none;
+        
+    }
+    nav .manu ul li a {
+        color: #f459ff;
+    }
+    nav .manu ul li #sou {
+        position: static;
+        display: none;
+    }
+    nav .manu ul li .showsou {
         display: block;
-        margin-top: 30px;
-        padding-top: 30px;
-        background-color: rgb(0, 0, 0);
+        position: static;
+    }
+    
+
+    
+    nav .manu .see{
+        display: inline;
         position: absolute;
-        right: 0;
-        padding-right: 20px;
-        transform: skew(0deg,-10deg);
-        padding-bottom: 20px;
-        border-top-left-radius:30px ;
-        border-bottom-right-radius: 30px;
-        box-shadow: 10px -10px 25px 0px rgba(143,64,248,0.5), -10px 10px 25px 0px rgba(39,200,255,0.5);
+        left: 50%;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+    nav .manu .uo .bjo .showbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     nav .manu ul li{
         transform: skew(0deg,10deg);
@@ -539,6 +555,7 @@ footer .aout-2 .font{
         width: 100%;
         position: relative;
     }
+
     nav .logo{
         display: inline-block;
     }
@@ -575,6 +592,9 @@ footer .aout-2 .font{
         margin-top:10px;
     }
 /* main */
+main {
+    padding: 0 10px;
+}
 main .title-box .text{
     margin: 0;
 }
@@ -647,280 +667,4 @@ main .box-2 .card .title-1 .color{
     footer .aout-2 .title .color{
         margin-left: 0;
     }
-}
-
-/* xm */
-@media screen and (max-width: 779px){
-    nav{
-        flex-direction: column;
-        justify-content: center;
-    }
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    nav .manu ul li a{
-        display: block;
-        text-align: center;
-        color:#ffffff;
-        font-weight: bold;
-        margin-top: 10px;
-    }
-    nav .manu .uo{
-        display: none;
-    }
-    nav .manu .see{
-        display: block;
-        margin-top: 30px;
-        padding-top: 30px;
-        background-color: rgb(0, 0, 0);
-        position: absolute;
-        right: 0;
-        padding-right: 20px;
-        transform: skew(0deg,-10deg);
-        padding-bottom: 20px;
-        border-top-left-radius:30px ;
-        border-bottom-right-radius: 30px;
-        box-shadow: 10px -10px 25px 0px rgba(143,64,248,0.5), -10px 10px 25px 0px rgba(39,200,255,0.5);
-    }
-    nav .manu ul li{
-        transform: skew(0deg,10deg);
-    }
-    nav .manu {
-        width: 100%;
-        position: relative;
-    }
-    nav .logo{
-        display: inline-block;
-    }
-    nav .bars{
-        display: inline;
-        cursor: pointer;
-        text-align: center;
-        border-radius: 10px;
-        position: fixed;
-        right: 0px;
-    }
-    nav .manu ul li .x-box-22, nav .manu ul li:hover .box {
-        position: sticky;
-        display: flex;
-        justify-content: center;
-        border-radius: 30px;
-    }
-    nav .manu ul li .x-box-22 .a-1, nav .manu ul li:hover .box .a-1{
-        width: 150px;
-    }
-    nav .manu ul li .x-box-22 .a-1 a, nav .manu ul li:hover .box .a-1 a{
-        text-align: left;
-        width: 150px;
-    }
-    nav .manu ul li .x-box-22 .a-2 a, nav .manu ul li:hover .box .a-2 a{
-        text-align: left;
-        width: 150px;
-    }
-    nav .manu ul li .x-box-22 a  nav .manu ul li:hover .box a{
-        display: block;
-        font-size: 0.70em;
-        color:#ffffff;
-        text-align: center;
-        margin-top:10px;
-    }
-
-    nav .manu ul li .box-2223 a{
-        display:block;
-        margin-top: 10px;
-    }
-    nav .manu ul li .img{
-        text-align: center;
-        position: sticky;
-        display: block;
-    }
-    nav .manu ul li:hover .box-2223{
-        position: sticky;
-    }
-    /* main */
-    /* main */
-main .title-box .text{
-    margin: 0;
-}
-main .title-box .box-img img{
-    width: 300px;
-}
-main .title-box .title-0{
-    font-size: 0.90em;
-}
-main .box-1 .img img{
-    margin: 0;
-    width: 300px;
-}
-main .box-1 .img{
-    text-align: center;
-}
-main .box-2 .card .title{
-    margin:0;
-}
-main .box-2 .card .title-1 .text{
-    margin: 0;
-}
-main .box-2 .card .title-1 .color{
-    margin: 0;
-}
-main .box-3 .img p{
-    margin: 0;
-}
-main .box-4 .title{
-    margin: 0;
-}
-main .box-4 .title .color{
-    width: 300px;
-}
-main .box-4 .text p{
-    padding: 0 10px;
-    font-size: 0.90em;
-}main .box-3 .text{
-    padding: 0 10px;
-    font-size: 0.90em;
-}
-main .box-2 .card .title-1 .text-bsu,main .box-1 .text-1{
-    padding: 0 10px;
-    font-size: 0.90em;
-}
-main .box-2 .card .title-1 .text-bsu-1,main .box-1 .text-2{
-    padding: 0 10px;
-    font-size: 0.90em;
-}
-main .box-text .box-text-ba{
-    margin: 0;
-    font-size: 0.90em;
-}
-
-    /* footer */
-    footer{
-        display: block;
-    }
-    footer .aout .title .color ,footer .aout-1 .title .color,footer .aout-2 .title .color{
-        width: 150px;
-        margin-left: 0;
-    }
-    footer .aout-2 .text{
-        padding-left: 0;
-    }
-}
-
-/* lm */
-@media screen and (max-width: 980px){
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    nav .manu .uo{
-        margin-left: 0;
-    }
-    /* main */
-main .title-box .text{
-    margin: 0;
-}
-main .title-box .box-img img{
-    width: 300px;
-}
-main .title-box .title-0{
-    font-size: 0.90em;
-}
-main .box-1 .img img{
-    margin: 0;
-    width: 300px;
-}
-main .box-1 .img{
-    text-align: center;
-}
-main .box-2 .card .title{
-    margin:0;
-}
-main .box-2 .card .title-1 .text{
-    margin: 0;
-}
-main .box-2 .card .title-1 .color{
-    margin: 0;
-}
-main .box-3 .img p{
-    margin: 0;
-}
-main .box-4 .title{
-    margin: 0;
-}
-main .box-4 .title .color{
-    width: 300px;
-}
-main .box-4 .text p{
-    padding: 0 10px;
-    font-size: 1.2em;
-}main .box-3 .text{
-    padding: 0 10px;
-    font-size: 1.2em;
-}
-main .box-2 .card .title-1 .text-bsu,main .box-1 .text-1{
-    padding: 0 10px;
-    font-size: 1.2em;
-}
-main .box-2 .card .title-1 .text-bsu-1,main .box-1 .text-2{
-    padding: 0 10px;
-    font-size: 1.2em;
-}
-main .box-text .box-text-ba{
-    margin: 0;
-    font-size: 1.2em;
-}
-    /* footer */
-    footer{
-        display: block;
-    }
-    footer .aout .title .color{
-        width: 200px;
-    }
-    footer .aout-2 .text{
-        padding-left: 0;
-    }
-    footer .aout-2 .title .color{
-        margin-left: 0;
-    }
-}
-@media screen and (max-width: 1115px){
-        /* main */
-        main .title-box .box-img img{
-            width: 100%;
-        }
-        main .box-1 .img{
-            text-align: center;
-        }
-        main .box-1 .img img{
-            width: 100%;
-        }
-main .box-1 .img{
-    text-align: center;
-}
-main .box-2 .card .title{
-    margin:0;
-}
-main .box-2 .card .title-1 .text{
-    margin: 0;
-}
-main .box-2 .card .title-1 .color{
-    margin: 0;
-}
-main .box-3 .img p{
-    margin: 0;
-}
-main .box-4 .title{
-    margin: 0;
-}
-
-main .box-text .box-text-ba{
-    margin: 0;
-    font-size: 1.2em;
-}
-footer .aout-2 .title .color{
-    position:static;
-}
 }

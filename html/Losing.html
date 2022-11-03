@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/losing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>losing</title>
 </head>
 <body>
@@ -78,48 +80,329 @@
     </div>
 </nav>
     <!-- main -->
-    <main>
-        <form action="#">
-            <div class="form">
-                <div class="font">
-                    <i class="fa-brands fa-apple"></i>
-                </div>
-                <div class="title"><p>ກະລູນາປ້ອນຂໍ້ມູນເພຶອພວກເຮົາຈະໄດ້ຈັດສົ່ງໃຫ້ທ່ານ</p></div>
-                <div class="name">
-                    <label for="name">ຊື່:</label>
-                    <input type="text" name="name" placeholder="ກະລູນາປ້ອນຊື່...............">
-                    <label for="lname">ນາມສະກຸນ:</label>
-                    <input type="text" name="lname" placeholder="ກະລຸນາປ້ອນນາມສະກຸນ.................">
-                </div>
-                <div class="fname">
-                    <div class="title-fname">
-                        <p>ຂໍ້ມູນການຈັດສົ່ງ</p>
-                    
-                    <label for="iphone">ຈັດສົ່ງບໍລິສັດ</label>
-                    <select name="iphone" id="">
-                        <option value="0">ເລືອກ</option>
-                        <option value="1">ຮູ່ງອາລຸ່ນ</option>
-                        <option value="2">ອານຸສິດ</option>
-                        <option value="3">ມີໄຊ</option>
-                        <option value="4">ມະຫາຊົນ</option>
-                    </select>  
-                    <label for="number">ເບີໂທຕໍ່ຕິດ:</label>
-                    <input type="number" name="number" placeholder="+856 20 .............">
-                   <div class="mname">
-                    <label for="bis">ບ້ານ:</label>
-                    <input type="text" name="bis" placeholder="ກະລຸນາປ້ອນບ້ານ............">
-                    <label for="mis">ເມືອງ:</label>
-                    <input type="text" name="bis" placeholder="ກະລຸນາປ້ອນເມືອງ.............">
-                   </div>
-                    <label for="kis">ແຂວງ:</label>
-                    <input type="text" name="bis" placeholder="ກະລຸນາປ້ອນແຂວງ.............">
-                </div>
-                </div>
-                <div class="btn">
-                    <button class="btn-4" onclick="btn()">ສັ່ງຊື່ເລີຍ</button>
-                </div>
+    <div class="container">
+        <form action="" method="post" class="">
+            <h1 class="text-center">ປ້ອນຂໍ້ມູນຂອງທ່ານເພືອພວກເຮົາຈະໄດ້ຈັດສົ່ງ</h1>
+            <div class="">
+                <label for="" class="fs-5 text-warning">ຊື່</label>
+                <input type="text" class="form-control mb-2" id="name">
             </div>
+            <div class="">
+                <label for="" class="fs-5 text-warning">ນາມສະກຸນ</label>
+                <input type="text" class="form-control mb-2" id="lname">
+            </div>
+            <div class="">
+                <label for="" class="fs-5 text-warning">ເບີໂທ</label>
+                <input type="number" class="form-control mb-2" id="Tel" placeholder="+856 20 ...">
+            </div>
+            
+            <div class=" form-control mb-2">
+                <label for="" class="fs-5 text-warning">ແຂວງ</label>
+                <select name="" id="pin">
+                    <option value="" >ເລືອກ</option>
+                    <option value="ແຂວງວຽງຈັນ" >ແຂວງວຽງຈັນ</option>
+                    <option value="ແຂວງໄຊຍະບູລີ" >ແຂວງໄຊຍະບູລີ</option>
+                    <option value="ນະຄອນຫຼວງ" >ນະຄອນຫຼວງ</option>
+                    <option value="ແຂວງຄຳມວ່ນ">ແຂວງຄຳມວ່ນ</option>
+                    <option value="ແຂວງຈຳປະສັກ">ແຂວງຈຳປະສັກ</option>
+                    <option value="ແຂວງຊຽງຂວາງ">ແຂວງຊຽງຂວາງ</option>
+                    <option value="ແຂວງໄຊສົມບູນ">ແຂວງໄຊສົມບູນ</option>
+                    <option value="ແຂວງເຊກອງ">ແຂວງເຊກອງ</option>
+                    <option value="ແຂວງບໍໍລິຄຳໄຊ">ແຂວງບໍລິຄຳໄຊ</option>
+                    <option value="ແຂວງບໍ່ແກ້ວ">ແຂວງບໍ່ແກ້ວ</option>
+                    <option value="ແຂວງຜົ້ງສາລີ">ແຂວງຜົ້ງສາລີ</option>
+                    <option value="ແຂວງສາລະວັນ">ແຂວງສາລະວັນ</option>
+                    <option value="ແຂວງສະຫວັດນະເຂດ">ແຂວງສະຫວັນນະເຂດ</option>
+                    <option value="ແຂວງຫຼວງນ້ຳທາ">ແຂວງຫຼວງນ້ຳທາ</option>
+                    <option value="ແຂວງຫຼວງພະບາງ">ແຂວງຫຼວງພະບາງ</option>
+                    <option value="ແຂວງຫົວພັນ">ແຂວງຫົວພັນ</option>
+                    <option value="ແຂວງອັດຕະປຶ">ແຂວງອັດຕະປຶ</option>
+                    <option value="ແຂວງອຸດົມໄຊ">ແຂວງອຸດົມໄຊ</option>
+                </select>
+            </div>
+
+                    <div class="form-control mb-2" id="CutyHide">
+                        <label for="" class="fs-5 text-warning">ເມືອງ</label>
+                        <select name="" id="">
+                            <option value="">ເລືອກ</option>
+                        </select>
+                    </div>
+
+            <!-- ໄຊຍະບູລີ -->
+            
+                            
+                <select name="" class="form-control mb-2 d-none" id="Xayabuli">
+                    <option value="ເມືອງໄຊຍະບູລີ">ເມືອງໄຊຍະບູລີ</option>
+                    <option value="ເມືອງພຽງ">ເມືອງພຽງ</option>
+                    <option value="ເມືອງຄອບ">ເມືອງຄອບ</option>
+                    <option value="ເມືອງຫົງສາ">ເມືອງຫົງສາ</option>
+                    <option value="ເມືອງເງີນ">ເມືອງເງີນ</option>
+                    <option value="ເມືອງຊຽງຮ່ອນ">ເມືອງຊຽງຮ່ອນ</option>
+                    <option value="ເມືອງປາກລາຍ">ເມືອງປາກລາຍ</option>
+                    <option value="ເມືອງແກ່ນພ້າວ">ເມືອງແກ່ນພ້າວ</option>
+                    <option value="ເມືອງບໍ່ແຕນ">ເມືອງບໍ່ແຕນ</option>
+                    <option value="ເມືອງທົ່ງມີໄຊ">ເມືອງທົ່ງມີໄຊ</option>
+                    <option value="ເມືອງໄຊສະຖານ">ເມືອງໄຊສະຖານ</option>
+                </select>
+       
+            <!-- ວຽງຈັນ -->
+         
+                        
+                <select name="" class="form-control mb-2 d-none" id="Vientiane">
+                    <option value="ເມືອງວຽງຄຳ">ເມືອງວຽງຄຳ</option>
+                    <option value="ເມືອງໂພນໂຮງ">ເມືອງໂພນໂຮງ</option>
+                    <option value="ເມືອງທຸລະຄົມ">ເມືອງທຸລະຄົມ</option>
+                    <option value="ເມືອງແກ້ວອຸດົມ">ເມືອງແກ້ວອຸດົມ</option>
+                    <option value="ເມືອງກາສີ">ເມືອງກາສີ</option>
+                    <option value="ເມືອງວັງວຽງ">ເມືອງວັງວຽງ</option>
+                    <option value="ເມືອງເຟຶອງ">ເມືອງເຟຶອງ</option>
+                    <option value="ເມືອງຊະນະຄານ">ເມືອງຊະນະຄານ</option>
+                    <option value="ເມືອງແມດ">ເມືອງແມດ</option>
+                    <option value="ເມືອງຫີນເຫີບ">ເມືອງຫີນເຫີບ</option>
+                    <option value="ເມືອງໜື່ນ">ເມືອງໜື່ນ</option>
+                </select>
+        
+
+            <!-- ນະຄອນຫຼວງ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Capital">
+                    <option value="ເມືອງຈັນທະບູລີ">ເມືອງຈັນທະບູລີ</option>
+                    <option value="ເມືອງສີໂຄດຕະບອງ">ເມືອງສີໂຄດຕະບອງ</option>
+                    <option value="ເມືອງໄຊເສດຖານ">ເມືອງໄຊເສດຖານ</option>
+                    <option value="ເມືອງສີສັດຕະນາກ">ເມືອງສີສັດຕະນາກ</option>
+                    <option value="ເມືອງນາຊາຍທອງ">ເມືອງນາຊາຍທອງ</option>
+                    <option value="ເມືອງໄຊທານີ">ເມືອງໄຊທານີ</option>
+                    <option value="ເມືອງຫາດຊາຍຟອງ">ເມືອງຫາດຊາຍຟອງ</option>
+                    <option value="ເມືອງສັງທອງ">ເມືອງສັງທອງ</option>
+                    <option value="ເມືອງປາກງຶ່ມ">ເມືອງປາກງຶ່ມ</option>
+                </select>
+        
+
+            <!-- ຄຳມວ່ນ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Khammuan">
+                    <option value="ເມືອງທ່າແຂກ">ເມືອງທ່າແຂກ</option>
+                    <option value="ເມືອງມະຫາໄຊ">ເມືອງມະຫາໄຊ</option>
+                    <option value="ເມືອງໜອງບົກ">ເມືອງໜອງບົກ</option>
+                    <option value="ເມືອງຫີນບູນ">ເມືອງຫີນບູນ</option>
+                    <option value="ເມືອງຍົມມະລາດ">ເມືອງຍົມມະລາດ</option>
+                    <option value="ເມືອງບົວລະພາ">ເມືອງບົວລະພາ</option>
+                    <option value="ເມືອງນາກາຍ">ເມືອງນາກາຍ</option>
+                    <option value="ເມືອງເຊບັ້ງໄຟ">ເມືອງເຊບັ້ງໄຟ</option>
+                    <option value="ເມືອງໄຊບົວທອງ">ເມືອງໄຊບົວທອງ</option>
+                    <option value="ເມືອງຄູນຄຳ">ເມືອງຄູນຄຳ</option>
+                </select>
+       
+
+            <!-- ຈຳປາສັກ -->
+                        
+                <select name="" class="form-control mb-2 d-none"  id="Champasak">
+                    <option value="ເມືອງປາກເຊ">ເມືອງປາກເຊ</option>
+                    <option value="ເມືອງຊະນະສົມບູນ">ເມືອງຊະນະສົມບູນ</option>
+                    <option value="ເມືອງບາຈຽງຈະເລີນສຸກ">ເມືອງບາຈຽງຈະເລີນສຸກ</option>
+                    <option value="ເມືອງປາກຊອງ">ເມືອງປາກຊອງ</option>
+                    <option value="ເມືອງປະທຸມພອນ">ເມືອງປະທຸມພອນ</option>
+                    <option value="ເມືອງໂພນທອງ">ເມືອງໂພນທອງ</option>
+                    <option value="ເມືອງຈຳປາສັກ">ເມືອງຈຳປາສັກ</option>
+                    <option value="ເມືອງສຸຂຸມາ">ເມືອງສຸຂຸມາ</option>
+                    <option value="ເມືອງມູນລະປະໂມກ">ເມືອງມູນລະປະໂມກ</option>
+                    <option value="ເມືອງໂຂງ">ເມືອງໂຂງ</option>
+                </select>
+          
+
+            <!-- ຊຽງຂວາງ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Xiengkhuang">
+                    <option value="ເມືອງແປກ">ເມືອງແປກ</option>
+                    <option value="ເມືອງຄຳ">ເມືອງຄຳ</option>
+                    <option value="ເມືອງໜອງແຮດ">ເມືອງໜອງແຮດ</option>
+                    <option value="ເມືອງຄູນ">ເມືອງຄູນ</option>
+                    <option value="ເມືອງໝອກໃໝ່">ເມືອງໝອກໃໝ່</option>
+                    <option value="ເມືອງພູກູດ">ເມືອງພູກູດ</option>
+                    <option value="ເມືອງຜາໄຊ">ເມືອງຜາໄຊ</option>
+                </select>
+        
+
+            <!-- ໄຊສົມບູນ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="XaiSambon">
+                    <option value="ເມືອງໄຊສົມບູນ">ເມືອງໄຊສົມບູນ</option>
+                    <option value="ເມືອງທ່າໂທມ">ເມືອງທ່າໂທມ</option>
+                    <option value="ເມືອງຮົ່ມ">ເມືອງຮົ່ມ</option>
+                    <option value="ເມືອງລ້ອງຊານ">ເມືອງລ້ອງຊານ</option>
+                    <option value="ເມືອງພູນ">ເມືອງພູນ</option>
+                </select>
+        
+
+            <!-- ເຊກອງ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Sekong">
+                    <option value="ເມືອງລະມາມ">ເມືອງລະມາມ</option>
+                    <option value="ເມືອງກະລຶມ">ເມືອງກະລຶມ</option>
+                    <option value="ເມືອງດາກຈຶງ">ເມືອງດາກຈຶງ</option>
+                    <option value="ເມືອງທ່າແຕງ">ເມືອງທ່າແຕງ</option>
+                </select>
+           
+
+            <!-- ບໍລິຄຳໄຊ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Borikhamxay">
+                    <option value="ເມືອງປາກຊັນ">ເມືອງປາກຊັນ</option>
+                    <option value="ເມືອງທ່າພະບາດ">ເມືອງທ່າພະບາດ</option>
+                    <option value="ເມືອງປາກກະດິງ">ເມືອງປາກກະດິງ</option>
+                    <option value="ເມືອງບໍລິຄັ່ນ">ເມືອງບໍລິຄັ່ນ</option>
+                    <option value="ເມືອງຄຳເກີດ">ເມືອງຄຳເກີດ</option>
+                    <option value="ເມືອງວຽງທອງ">ເມືອງວຽງທອງ</option>
+                    <option value="ເມືອງໄຊຈຳພອນ">ເມືອງໄຊຈຳພອນ</option>
+                </select>
+        
+
+            <!-- ບໍ່ແກ້ວ -->
+           
+                        
+              <select name="" class="form-control mb-2 d-none" id="Bokeo">
+                <option value="ເມືອງຫ້ວຍຊາຍ">ເມືອງຫ້ວຍຊາຍ</option>
+                <option value="ເມືອງຕົ້ນເຜິ້ງ">ເມືອງຕົ້ນເຜິ້ງ</option>
+                <option value="ເມືອງເມິງ">ເມືອງເມິງ</option>
+                <option value="ເມືອງຜາອຸດົມ">ເມືອງຜາອຸດົມ</option>
+                <option value="ເມືອງປາກທາ">ເມືອງປາກທາ</option>
+              </select>
+       
+
+            <!-- ຜົົ້ງສາລີ -->
+          
+                    
+                <select name="" class="form-control mb-2 d-none" id="Phongsaly">
+                    <option value="ເມືອງຜົ້ງສາລີ">ເມືອງຜົ້ງສາລີ</option>
+                    <option value="ເມືອງໃໜ່">ເມືອງໃໜ່</option>
+                    <option value="ເມືອງຂວາ">ເມືອງຂວາ</option>
+                    <option value="ເມືອງສຳພັນ">ເມືອງສຳພັນ</option>
+                    <option value="ເມືອງບຸນເໜຶອ">ເມືອງບຸນເໜຶອ</option>
+                    <option value="ເມືອງຍອດອູ">ເມືອງຍອດອູ</option>
+                    <option value="ເມືືອງບຸນໃຕ້">ເມືືອງບຸນໃຕ້</option>
+                </select>
+           
+
+            <!-- ສາລະວັນ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Sarawan">
+                    <option value="ເມືອງສາລະວັນ">ເມືອງສາລະວັນ</option>
+                    <option value="ເມືອງຕະໂອ້ຍ">ເມືອງຕະໂອ້ຍ</option>
+                    <option value="ເມືອງຕຸ້ມລານ">ເມືອງຕຸ້ມລານ</option>
+                    <option value="ເມືອງລະຄອນເພັງ">ເມືອງລະຄອນເພັງ</option>
+                    <option value="ເມືອງວາປີ">ເມືອງວາປີ</option>
+                    <option value="ເມືອງຄົງເຊໂດນ">ເມືອງຄົງເຊໂດນ</option>
+                    <option value="ເມືອງເລົ່າງາມ">ເມືອງເລົ່າງາມ</option>
+                    <option value="ເມືອງສະໜ້ວຍ">ເມືອງສະໜ້ວຍ</option>
+                </select>
+          
+
+            <!-- ສະຫວັນນະເຂດ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Savanakhet">
+                    <option value="ເມືອງໄກສອນພົມວິຫານ">ເມືອງໄກສອນພົມວິຫານ</option>
+                    <option value="ເມືອງອຸທົມພອນ">ເມືອງອຸທົມພອນ</option>
+                    <option value="ເມືອງອາດສະພັງ">ເມືອງອາດສະພັງ</option>
+                    <option value="ເມືອງພີນ">ເມືອງພີນ</option>
+                    <option value="ເມືອງເຊໂປນ">ເມືອງເຊໂປນ</option>
+                    <option value="ເມືອງນອງ">ເມືອງນອງ</option>
+                    <option value="ເມືອງທ່າປາງທອງ">ເມືອງທ່າປາງທອງ</option>
+                    <option value="ເມືອງສອງຄອນ">ເມືອງສອງຄອນ</option>
+                    <option value="ເມືອງຈຳພອນ">ເມືອງຈຳພອນ</option>
+                    <option value="ເມືອງຊົນບຸລີ">ເມືອງຊົນບຸລີ</option>
+                    <option value="ເມືອງໄຊບູລີ">ເມືອງໄຊບູລີ</option>
+                    <option value="ເມືອງວີລະບຸລີ">ເມືອງວີລະບຸລີ</option>
+                    <option value="ເມືອງອາດສະພອນ">ເມືອງອາດສະພອນ</option>
+                    <option value="ເມືອງໄຊພູທອງ">ເມືອງໄຊພູທອງ</option>
+                    <option value="ເມືອງພະລານໄຊ">ເມືອງພະລານໄຊ</option>
+                </select>
+         
+
+            <!-- ຫຼວງນ້ຳທາ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="LuangNamtha">
+                    <option value="ເມືອງຫຼວງນ້ຳທາ">ເມືອງຫຼວງນ້ຳທ</option>
+                    <option value="ເມືອງສີງ">ເມືອງສີງ</option>
+                    <option value="ເມືອງລອງ">ເມືອງລອງ</option>
+                    <option value="ເມືອງວຽງພູຄາ">ເມືອງວຽງພູຄາ</option>
+                    <option value="ເມືອງນາແລ">ເມືອງນາແລ</option>
+                </select>
+        
+
+            <!-- ຫຼວງພະບາງ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="LuangPrabang">
+                    <option value="ເມືອງຫຼວງພະບາງ">ເມືອງຫຼວງພະບາງ</option>
+                    <option value="ເມືອງຊຽງເງີນ">ເມືອງຊຽງເງີນ</option>
+                    <option value="ເມືອງນານ">ເມືອງນານ</option>
+                    <option value="ເມືອງປາກອູ">ເມືອງປາກອູ</option>
+                    <option value="ເມືອງນ້ຳບາກ">ເມືອງນ້ຳບາກ</option>
+                    <option value="ເມືອງງອຍ">ເມືອງງອຍ</option>
+                    <option value="ເມືອງປາກແຊງ">ເມືອງປາກແຊງ</option>
+                    <option value="ເມືອງໂພນໄຊ">ເມືອງໂພນໄຊ</option>
+                    <option value="ເມືອງຈອມເພັດ">ເມືອງຈອມເພັດ</option>
+                    <option value="ເມືອງວຽງຄຳ">ເມືອງວຽງຄຳ</option>
+                    <option value="ເມືອງພູຄູນ">ເມືອງພູຄູນ</option>
+                    <option value="ເມືອງໂພນທອງ">ເມືອງໂພນທອງ</option>
+                </select>
+         
+
+            <!-- ຫົວພັນ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Huaphan">
+                    <option value="ເມືອງຊຳເໜືອ">ເມືອງຊຳເໜືອ</option>
+                    <option value="ເມືອງຊຽງຄໍ້">ເມືອງຊຽງຄໍ້</option>
+                    <option value="ເມືອງວຽງທອງ">ເມືອງວຽງທອງ</option>
+                    <option value="ເມືອງວຽງໄຊ">ເມືອງວຽງໄຊ</option>
+                    <option value="ເມືອງຫົວເມືອງ">ເມືອງຫົວເມືອງ</option>
+                    <option value="ເມືອງຊຳໃຕ້">ເມືອງຊຳໃຕ້</option>
+                    <option value="ເມືອງສົບເບົາ">ເມືອງສົບເບົາ</option>
+                    <option value="ເມືອງແອດ">ເມືອງແອດ</option>
+                </select>
+       
+
+            <!-- ອັດຕະປຶ -->
+                        
+                <select name="" class="form-control mb-2 d-none" id="Attapu">
+                    <option value="ເມືອງໄຊເຊດຖາ">ເມືອງໄຊເຊດຖາ</option>
+                    <option value="ເມືອງສາມັກຄີໄຊ">ເມືອງສາມັກຄີໄຊ</option>
+                    <option value="ເມືອງສະໜາມໄຊ">ເມືອງສະໜາມໄຊ</option>
+                    <option value="ເມືອງສານໄຊ">ເມືອງສານໄຊ</option>
+                    <option value="ເມືອງພູວົງ">ເມືອງພູວົງ</option>
+                </select>
+        
+
+            <!-- ອຸດົມໄຊ -->
+           
+                        
+                <select name="" class="form-control mb-2 d-none" id="Oudomxay">
+                    <option value="ເມືອງໄຊ">ເມືອງໄຊ</option>
+                    <option value="ເມືອງຫຼາ">ເມືອງຫຼາ</option>
+                    <option value="ເມືອງນາໜໍ້">ເມືອງນາໜໍ້</option>
+                    <option value="ເມືອງງາ">ເມືອງງາ</option>
+                    <option value="ເມືອງແບ່ງ">ເມືອງແບ່ງ</option>
+                    <option value="ເມືອງຮຸນ">ເມືອງຮຸນ</option>
+                    <option value="ເມືອງປາກແບ່ງ">ເມືອງປາກແບ່ງ</option>
+                </select>
+           
+
+            
+                <label for="" class="fs-5 text-warning">ບ້ານ</label>
+                <input type="text" id="ditl" class="form-control mb-2">
+            
+                <label for="" class="fs-5 text-warning">ບໍລິສັດຂົນສົ່ງ</label>
+                <select name="" class="form-control mb-2" id="bous">
+                    <option value="ຮຸງອາລຸນ">ຮຸງອາລຸນ</option>
+                    <option value="ອານຸສິດ">ອານຸສິດ</option>
+                    <option value="ມີໄຊ">ມີໄຊ</option>
+                    <option value="ກັບຕັນ">ກັບຕັນ</option>
+                    <option value="ມະຫາຊົນ">ມະຫາຊົນ</option>
+                </select>
+            <button type="button" id="submit" class="btn btn-outline-success fs-4">ສັ່ງຊື້</button>
+            <button type="reset" class="btn btn-outline-danger fs-4">ລ້າງຂໍ້ມູນ</button>
         </form>
+    </div>
+        
         </main>
         <script src="../js/button.js"></script>
         <footer>
@@ -169,7 +452,7 @@
                 </div>
                 <div class="text">
                     <li>Facebook: ວິທະຍາໄລ ບີຊີທີ</li>
-                    <li>Facebook: BCT College for  I.T Education</li>
+                    <li>Facebook: BCT College for  I class="fs-5 text-warning".T Education</li>
                     <li>ເບີໂທ ຫຼຶ ແອບ 020 5561 6051</li>
                     <li>ຖ້າຫາກວ່າສົນໃຈໃນການສືກສາດ້ານ IT ຫຼຶ ການຂຽນພາສາໂປຣແກຣມມິ່ງສາມາດຕິດຕໍ່ມາຮຽນ
                         ນຳພວກເຮົາໄດ້ທີ່ ວິທະຍາໄລຂອງພວກເຮົາໄດ້ ທີ່ ວິທະຍາໄລ BCT ຄຸນນະພາບການສືກສາມາກ່ອນສະເໜີ</li>
@@ -181,6 +464,8 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/nav.js"></script>
+        <script src="../js/option.js"></script>
+        
+        
         </body>
         </html>

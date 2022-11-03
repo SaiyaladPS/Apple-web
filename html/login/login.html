@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>Document</title>
+    <title>login</title>
+   
     <link rel="stylesheet" href="../../css/iPhone 6 .css">
     <style>
         *{
@@ -69,7 +70,6 @@
         .inputBox input:focus{
             border: 1px solid #00dfc4;
         }
-
     </style>
 </head>
 <body>
@@ -82,6 +82,11 @@
         <input type="password" id="password" required="required">
         <span>Passowrd</span>
         
+    </div>
+    
+    <div class="inputBox">
+        <input type="checkbox" name="" id="showPass" required="required" >
+    <span>ShowPassword</span>
     </div>
     <button id="login" class="btn btn-outline-success">login</button>
     <a class="btn btn-outline-info" href="../../index.html">ກັບຄືນ</a>
@@ -98,11 +103,13 @@
                 <tr>
                     <td id="Tname"></td>
                     <td id="Tpass"></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
     </div>
     <script src="../../js/form.js"></script>
+    <script src="../../js/login.js"></script>
     
 </body>
 </html>

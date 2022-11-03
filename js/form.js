@@ -9,7 +9,6 @@ btnLogin.addEventListener('click', function(){
     let textname = fname.value;
     let textPassword = Passowrd.value;
 
-    alert('ລົງເຂົ້າສູ່ລະບົບແລ້ວ')
    Tname.innerText = textname
     Tpass.innerText = textPassword
 })
