@@ -201,7 +201,7 @@ nav .manu ul li:hover .box-2223{
     padding-top: 60px;
 }
 form {
-    padding: 30px 100px;
+    padding: 30px 400px;
     border-radius: 20px;
     
 }
@@ -216,6 +216,7 @@ option {
     padding: 5px;
     color:rgb(194, 30, 142)
 }
+
 
 /* footer */
 
@@ -400,4 +401,17 @@ footer .aout-2 .font{
         text-align: center;
         margin-top:10px;
     }
+        form {
+            padding: 0;
+        }
+        /* footer */
+        footer{
+            display: block;
+        }
+        footer .aout-2 .text{
+            padding-left: 0;
+        }
+        footer .aout-2 .title .color{
+            margin-left: 0;
+        }
 }
